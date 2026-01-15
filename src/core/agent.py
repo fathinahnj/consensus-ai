@@ -67,4 +67,5 @@ class Agent:
             "education_level": self.education_level,
             "income_level": self.income_level,
             "times_spoken": self.times_spoken,
+            "influence_exerted": self.influence_exerted,
         }
