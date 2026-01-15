@@ -24,3 +24,9 @@ class Agent:
         self.economic_anxiety = attributes.get("economic_anxiety")
         self.welfare_salience = attributes.get("welfare_salience")
         self.status_quo_bias = attributes.get("status_quo_bias")
+        
+        # ------------------------------------------------------------------
+        # Dynamic states 
+        # ------------------------------------------------------------------
+        self.opinion = attributes.get("initial_opinion", self.ideology_prior)
+        self.confidence = attributes.get("initial_confidence", 0.5) 
