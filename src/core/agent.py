@@ -25,6 +25,7 @@ class Agent:
         self.welfare_salience = attributes.get("welfare_salience")
         self.status_quo_bias = attributes.get("status_quo_bias") 
         
+        self.ideology_prior = attributes.get("ideology_prior")
         self.is_elite = attributes.get("is_elite", False)
         
         # ------------------------------------------------------------------
