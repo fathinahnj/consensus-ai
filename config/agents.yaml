@@ -26,14 +26,20 @@ agents:
     PrimaryAndLower:
       ratio: 0.238
       cognitive_complexity: 0.30
+      issue_based_reasoning: cognitive_complexity 
+      authority_deference: 1 - cognitive_complexity
 
     SecondaryLevel:
       ratio: 0.61
       cognitive_complexity: 0.50
+      issue_based_reasoning: cognitive_complexity 
+      authority_deference: 1 - cognitive_complexity
 
     University:
       ratio: 0.148
       cognitive_complexity: 0.75
+      issue_based_reasoning: cognitive_complexity 
+      authority_deference: 1 - cognitive_complexity
 
 
   income_levels:
