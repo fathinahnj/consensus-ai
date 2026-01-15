@@ -36,6 +36,7 @@ class Agent:
         # ------------------------------------------------------------------
         # self.vote_intention = None
         self.times_spoken = 0
+        self.influence_exerted = 0.0
         
     # ------------------------------------------------------------------
     # Minimal helper methods 
@@ -46,6 +47,12 @@ class Agent:
         Mark that the agent has spoken in a discussion round.
         """
         self.times_spoken += 1
+        
+    def record_influence(self, magnitude: float):
+        """
+        Record the influence exerted by this agent.
+        """
+        self.influence_exerted += abs(magnitude)
         
     # ------------------------------------------------------------------
     # Snapshot for logging / analysis
