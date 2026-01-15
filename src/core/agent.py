@@ -25,6 +25,8 @@ class Agent:
         self.welfare_salience = attributes.get("welfare_salience")
         self.status_quo_bias = attributes.get("status_quo_bias") 
         
+        self.is_elite = attributes.get("is_elite", False)
+        
         # ------------------------------------------------------------------
         # Dynamic states 
         # ------------------------------------------------------------------
@@ -66,6 +68,7 @@ class Agent:
             "age_group": self.age_group,
             "education_level": self.education_level,
             "income_level": self.income_level,
+            "is_elite": self.is_elite,
             "times_spoken": self.times_spoken,
             "influence_exerted": self.influence_exerted,
         }
