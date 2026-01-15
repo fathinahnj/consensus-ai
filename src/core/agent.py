@@ -30,3 +30,13 @@ class Agent:
         # ------------------------------------------------------------------
         self.opinion = attributes.get("initial_opinion", self.ideology_prior)
         self.confidence = attributes.get("initial_confidence", 0.5) 
+        
+    # ------------------------------------------------------------------
+    # Minimal helper methods 
+    # ------------------------------------------------------------------
+
+    def speak(self):
+        """
+        Mark that the agent has spoken in a discussion round.
+        """
+        self.times_spoken += 1
