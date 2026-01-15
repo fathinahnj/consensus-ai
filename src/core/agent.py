@@ -35,6 +35,7 @@ class Agent:
         # Interaction states 
         # ------------------------------------------------------------------
         # self.vote_intention = None
+        self.times_spoken = 0
         
     # ------------------------------------------------------------------
     # Minimal helper methods 
