@@ -40,3 +40,18 @@ class Agent:
         Mark that the agent has spoken in a discussion round.
         """
         self.times_spoken += 1
+        
+    # ------------------------------------------------------------------
+    # Snapshot for logging / analysis
+    # ------------------------------------------------------------------
+
+    def snapshot(self) -> dict:
+        return {
+            "id": self.id,
+            "opinion": self.opinion,
+            "confidence": self.confidence,
+            "age_group": self.age_group,
+            "education_level": self.education_level,
+            "income_level": self.income_level,
+            "times_spoken": self.times_spoken,
+        }
