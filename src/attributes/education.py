@@ -18,3 +18,6 @@ EDUCATION_LEVELS = {
         "authority_deference": 0.25
     }
 }
+
+def get_education_attributes(education_level: str) -> dict:
+    return EDUCATION_LEVELS[education_level]
