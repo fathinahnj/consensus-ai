@@ -18,3 +18,6 @@ INCOME_LEVELS = {
         "status_quo_bias": 0.65
     }
 }
+
+def get_income_attributes(income_level: str) -> dict:
+    return INCOME_LEVELS[income_level]
