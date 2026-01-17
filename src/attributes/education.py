@@ -20,4 +20,6 @@ EDUCATION_LEVELS = {
 }
 
 def get_education_attributes(education_level: str) -> dict:
-    return EDUCATION_LEVELS[education_level]
+  if education_level not in EDUCATION_LEVELS:
+    raise ValueError(f"Unknown education level \"{education_level}\"")
+  return EDUCATION_LEVELS[education_level]

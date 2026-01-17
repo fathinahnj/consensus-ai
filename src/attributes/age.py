@@ -22,4 +22,7 @@ AGE_GROUPS = {
 }
 
 def get_age_attributes(age_group: str) -> dict:
+    if age_group not in AGE_GROUPS:
+        raise ValueError(f"Unknown age group \"{age_group}\"")
+    
     return AGE_GROUPS[age_group]

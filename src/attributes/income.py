@@ -20,4 +20,6 @@ INCOME_LEVELS = {
 }
 
 def get_income_attributes(income_level: str) -> dict:
+  if income_level not in INCOME_LEVELS:
+    raise ValueError(f"Unknown income level \"{income_level}\"")
     return INCOME_LEVELS[income_level]
