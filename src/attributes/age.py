@@ -20,3 +20,6 @@ AGE_GROUPS = {
         "digital_exposure": 0.12
     }
 }
+
+def get_age_attributes(age_group: str) -> dict:
+    return AGE_GROUPS[age_group]
